@@ -1,0 +1,39 @@
+import React from 'react'
+import Progress from '../progress/Progress'
+import Image from 'next/image'
+
+const Sidebar = () => {
+  return (
+    <>
+
+
+        <aside id="logo-sidebar" className="fixed top-0 left-0 z-40 w-fit h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+        <div className="h-full px-3 py-7 overflow-y-hidden bg-gray-50 dark:bg-gray-800">
+            <ul className="space-y-7 font-medium">
+                <li>
+                    <div className="flex justify-center">
+                        <div className="space-y-2">
+                            <div className="w-8 h-0.5 bg-gray-600"></div>
+                            <div className="w-8 h-0.5 bg-gray-600"></div>
+                            <div className="w-8 h-0.5 bg-gray-600"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div className="flex justify-center"><Progress/></div>
+                </li>
+                <li>
+                    <a href="https://flowbite.com/" className="flex items-center pl-2.5">
+                        <Image src="/avalons.png" className="w-auto h-auto mr-3 sm:h-7" width={10} height={10} alt="Flowbite Logo" />
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+        </aside>
+
+    </>
+  )
+}
+
+export default Sidebar
