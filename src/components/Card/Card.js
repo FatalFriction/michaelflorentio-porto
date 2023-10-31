@@ -9,7 +9,7 @@ const Card = ({ card }) => {
       >
         <Image
           src={card.url}
-          className="absolute inset-0 z-0 w-full h-full transition-transform duration-300 group-hover:scale-110 overflow-hidden bg-center bg-cover"
+          className="absolute inset-0 z-0 w-full h-full overflow-hidden bg-center bg-cover"
           alt={card.id}
           width={3000}
           height={3000}
