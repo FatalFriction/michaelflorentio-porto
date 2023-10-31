@@ -1,5 +1,6 @@
 "use client"
 import Card from "@/components/Card/Card";
+import Hover from "@/utils/Hover";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 
@@ -19,16 +20,32 @@ const HorizontalScrollCarousel = () => {
 
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-86%"]);
 
+  const hoverHero = Hover(targetRef, {
+    x: 6,
+    y: 10,
+    z: 0,
+  });
+
+  const imageHover = Hover(targetRef, {
+    x: 0,
+    y: -5,
+    z: 0,
+  });
+
   return (
     <>
-    <section ref={targetRef} className="relative h-[300vh] bg-neutral whitespace-nowrap">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
+    <section ref={targetRef} className="relative h-[2450vh] bg-primary whitespace-nowrap scroll-smooth">
+    <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex">
-          {cards.map((card) => {
-            return <Card card={card} key={card.id} />;
-          })}
+        {cards.map((card) => (
+            <motion.div key={card.id} style={{ scaleY: card.id === 1 ? 1.1 : 1, scaleX: card.id === 1 ? 1.1 : 1 }}>
+            <div style={{ transform: card.id === 1 ? hoverHero.transform : "none" }}>
+                <Card card={card} key={card.id} style={{ transform: card.id === 1 ? imageHover.transform : "none" }} />
+            </div>
+            </motion.div>
+        ))}
         </motion.div>
-      </div>
+    </div>
     </section>
     </>
   );
