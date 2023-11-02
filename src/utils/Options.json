@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Snow",
+        "fpsLimit": 60,
+        "particles": {
+            "number": {
+                "value": 200,
+                "density": {
+                    "enable": true
+                }
+            },
+            "color": {
+                "value": "#fff"
+            },
+            "shape": {
+                "type": "circle"
+            },
+            "opacity": {
+                "value": 1
+            },
+            "size": {
+                "value": 10
+            },
+            "move": {
+                "enable": true,
+                "speed": 1.5,
+                "direction": "bottom",
+                "straight": true
+            },
+            "wobble": {
+                "enable": true,
+                "distance": 10,
+                "speed": 10
+            },
+            "zIndex": {
+                "value": {
+                    "min": 0,
+                    "max": 100
+                },
+                "opacityRate": 10,
+                "sizeRate": 10,
+                "velocityRate": 10
+            },
+            "detectRetina": true
+        }
+    },
+    {
+        "name": "Default",
+        "fullScreen": false,
+        "fpsLimit": 60,
+        "interactivity": {
+            "events": {
+                "onClick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "onHover": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "resize": true
+            },
+            "modes": {
+                "push": {
+                    "quantity": 3
+                },
+                "repulse": {
+                    "distance": 150,
+                    "duration": 0.4
+                }
+            }
+        },
+        "particles": {
+            "color": {
+                "value": "#D99938"
+            },
+            "move": {
+                "direction": "none",
+                "enable": true,
+                "outModes": {
+                    "default": "bounce"
+                },
+                "random": true,
+                "speed": 3,
+                "straight": false
+            },
+            "number": {
+                "density": {
+                    "enable": true,
+                    "area": 900
+                },
+                "value": 60
+            },
+            "opacity": {
+                "value": 0.6
+            },
+            "shape": {
+                "type": "circle"
+            },
+            "size": {
+                "value": { "min": 1, "max": 2.8 }
+            }
+        },
+        "detectRetina": true
+    }
+]
+
