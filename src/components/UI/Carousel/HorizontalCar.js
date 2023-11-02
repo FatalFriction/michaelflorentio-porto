@@ -1,8 +1,13 @@
 "use client"
 import Card from "@/components/Card/Card";
-import Particleseng from "@/utils/Particleseng";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
+import localFont from 'next/font/local'
+
+const myFont = localFont({
+  src: '/HeavyRain.ttf',
+  display: 'swap',
+})
 
 const HorizontalCar = () => {
   return (
@@ -26,7 +31,7 @@ const HorizontalScrollCarousel = () => {
     <div className="sticky top-0 flex h-screen items-center">
         <motion.div style={{ x }} className="flex">
         {cards.map((card) => (
-            <motion.div key={card.id}>
+            <motion.div key={card.id} className={myFont.className}>
               <Card card={card} key={card.id} />
             </motion.div>
             )
@@ -43,7 +48,7 @@ export default HorizontalCar;
 const cards = [
   {
     url: "/Riau1.jpg",
-    title: "Title 1",
+    title: "",
     id: 1,
   },
   {
@@ -56,24 +61,24 @@ const cards = [
     title: "Title 3",
     id: 3,
   },
-  {
-    url: "/Illustration/4.jpg",
-    title: "Title 4",
-    id: 4,
-  },
-  {
-    url: "/Illustration/5.jpg",
-    title: "Title 5",
-    id: 5,
-  },
-  {
-    url: "/Illustration/6.jpg",
-    title: "Title 6",
-    id: 6,
-  },
-  {
-    url: "/Illustration/7.jpg",
-    title: "Title 7",
-    id: 7,
-  },
+//   {
+//     url: "/Illustration/4.jpg",
+//     title: "Title 4",
+//     id: 4,
+//   },
+//   {
+//     url: "/Illustration/5.jpg",
+//     title: "Title 5",
+//     id: 5,
+//   },
+//   {
+//     url: "/Illustration/6.jpg",
+//     title: "Title 6",
+//     id: 6,
+//   },
+//   {
+//     url: "/Illustration/7.jpg",
+//     title: "Title 7",
+//     id: 7,
+//   },
 ];

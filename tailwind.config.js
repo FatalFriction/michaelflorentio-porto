@@ -22,5 +22,12 @@ module.exports = {
       },
     ],
   },
-  plugins: [require("daisyui"),require('tailwind-scrollbar-hide')],
+  theme: {
+    extend: {
+      transformOrigin: {
+        'bottom-center': 'bottom center',
+      }
+    }
+  },
+  plugins: [require("daisyui"),require('tailwind-scrollbar-hide'),require('tailwindcss-3d')],
 }

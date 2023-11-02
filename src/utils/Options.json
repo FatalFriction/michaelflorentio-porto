@@ -72,7 +72,7 @@
         },
         "particles": {
             "color": {
-                "value": "#D99938"
+                "value": "#FFBA4D"
             },
             "move": {
                 "direction": "none",
@@ -87,7 +87,7 @@
             "number": {
                 "density": {
                     "enable": true,
-                    "area": 900
+                    "area": 700
                 },
                 "value": 60
             },

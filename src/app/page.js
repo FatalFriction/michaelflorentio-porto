@@ -9,10 +9,6 @@ export default function Home() {
   return (
         <main className="flex min-h-screen items-center justify-between overflow-clip scroll-smooth" data-theme="blueberry">
             <HorizontalCar />
-          <div className="absolute z-99">
-            {/* <Particleseng /> */}
-            {/* <ParticlesSnow/> */}
-          </div>
           <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
             <Sidebar />
           </div>
