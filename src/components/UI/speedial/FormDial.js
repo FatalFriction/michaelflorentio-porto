@@ -2,7 +2,7 @@ import React from 'react'
 
 const FormDial = () => {
   return (
-    <div className='absolute flex flex-col space-y-6 items-center justify-center bottom-6 left-28 w-[29rem] py-6 bg-accent opacity-90 rounded-sm'>
+    <div className='fixed flex flex-col space-y-6 items-center justify-center bottom-6 left-28 w-[29rem] py-6 bg-accent opacity-90 rounded-sm'>
         <span className='text-info font-bold text-3xl opacity-100'>
         Join My Mailing List!
         </span>

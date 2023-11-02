@@ -15,6 +15,7 @@ const Card = ({ card }) => {
           alt={card.id}
           width={5000}
           height={5000}
+          priority={true}
         />
         {card.id === 1 ? <Particleseng id="tsparticles" number={0}/> : null}
         {card.id === 2 ? <Particleseng id="tsparticles1" number={1}/> : null}
