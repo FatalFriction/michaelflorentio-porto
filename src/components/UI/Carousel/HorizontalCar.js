@@ -3,6 +3,7 @@ import Card from "@/components/Card/Card";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import localFont from 'next/font/local'
+import RobotCanvas from "@/components/LostRobot/RobotCanvas";
 
 const myFont = localFont({
   src: '/HeavyRain.ttf',
@@ -28,16 +29,17 @@ const HorizontalScrollCarousel = () => {
   return (
     <>
     <section ref={targetRef} className="relative h-[2450vh] bg-primary whitespace-nowrap scroll-smooth">
-    <div className="sticky top-0 flex h-screen items-center">
-        <motion.div style={{ x }} className="flex">
-        {cards.map((card) => (
-            <motion.div key={card.id} className={myFont.className}>
-              <Card card={card} key={card.id} />
+        <div className="sticky top-0 flex h-screen items-center">
+            <motion.div style={{ x }} className="flex">
+            {cards.map((card) => (
+                card.id === 3 ? <RobotCanvas key={card.id} /> :
+                <motion.div key={card.id} className={myFont.className}>
+                    <Card card={card} key={card.id} />
+                </motion.div>
+                )
+            )}
             </motion.div>
-            )
-        )}
-        </motion.div>
-    </div>
+        </div>
     </section>
     </>
   );

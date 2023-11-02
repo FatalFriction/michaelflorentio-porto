@@ -1,6 +1,7 @@
 [
     {
         "name": "Snow",
+        "fullScreen": false,
         "fpsLimit": 60,
         "particles": {
             "number": {
