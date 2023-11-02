@@ -2,6 +2,14 @@
   position: absolute;
   margin: 0;
   padding: 0;
-  width: 5000px;
-  height: 5000px;
+  width: 2000px;
+  height: 1000px;
+}
+
+#tsparticles {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 2000px;
+  height: 1000px;
 }
