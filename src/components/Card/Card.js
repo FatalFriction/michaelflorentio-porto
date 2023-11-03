@@ -1,8 +1,8 @@
 import Particleseng from '@/utils/Particleseng';
 import Image from 'next/image';
 import React from 'react'
-import localFont from 'next/font/local'
 import Text3d from '../Text3D/Text3d';
+import localFont from 'next/font/local'
 
 const myFont = localFont({
   src: '/Josefin.ttf',
@@ -26,14 +26,14 @@ const Card = ({ card }) => {
         />
         {card.id === 1 ? 
         <div>
-          <h1 className='absolute bottom-[20%] left-[9%] text-[12rem] text-info'>Who <br/><span className='absolute bottom-[-60%] left-[41%] '>am i</span></h1>
-          <h1 className='absolute bottom-[20%] left-[10%] text-[12rem] text-white'>Who <br/><span className='absolute bottom-[-60%] left-[40%] '>am i</span></h1>
-          <h2 className='absolute bottom-[25%] left-[41.7%] underline underline-offset-4 text-4xl text-info'>scroll </h2>
-          <h2 className='absolute bottom-[25%] left-[42%] underline underline-offset-4 text-4xl text-white'>scroll </h2>
+          <h1 className='absolute bottom-[20%] left-[9%] text-[12rem] text-info'>who <br/><span className='absolute bottom-[-60%] left-[32%] '>am i</span></h1>
+          <h1 className='absolute bottom-[20%] left-[10%] text-[12rem] text-white'>who <br/><span className='absolute bottom-[-60%] left-[31%] '>am i</span></h1>
+          <h2 className='absolute bottom-[25%] left-[38.5%] underline underline-offset-4 text-4xl text-info'>scroll </h2>
+          <h2 className='absolute bottom-[25%] left-[38.9%] underline underline-offset-4 text-4xl text-white'>scroll </h2>
           <div className={myFont.className}>
             <div className='text-3xl'>
-              <h3 className='absolute top-[5%] right-[5.1%] underline underline-offset-4 text-info'>[discover more] </h3>
-              <h3 className='absolute top-[5%] right-[5%] underline underline-offset-4 text-white'>[discover more] </h3>
+              <h3 className='absolute top-[5%] right-[5.1%] underline underline-offset-4 text-info'>[ discover more ]</h3>
+              <h3 className='absolute top-[5%] right-[5%] underline underline-offset-4 text-white'>[ discover more ]</h3>
             </div>  
           </div>
           <Particleseng id="tsparticles" number={0}/>
@@ -41,10 +41,10 @@ const Card = ({ card }) => {
         {card.id === 2 ? 
         <div className="flex flex-col items-start">
           <div className="ml-28 mt-40">
-            <Text3d first="Michael" second="Mastery"/>
+            <Text3d first="michael" second="mastery"/>
           </div>
           <div className="mx-auto mt-20">
-            <Text3d first="Florentio" second="ForwarD"/>
+            <Text3d first="florentio" second="forward"/>
           </div>
           <Particleseng id="tsparticles1" number={1}/>         
         </div> : null}
