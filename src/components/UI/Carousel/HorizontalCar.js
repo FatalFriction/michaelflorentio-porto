@@ -8,7 +8,6 @@ import FirstPanel from "../Panel/FirstPanel";
 import SecondPanel from "../Panel/SecondPanel";
 import ScrollCanvas from "@/components/Scroll/ScrollCanvas";
 import ThirdPanel from "../Panel/ThirdPanel";
-import FourthPanel from "../Panel/FourthPanel";
 
 const myFont = localFont({
   src: '/HeavyRain.ttf',
