@@ -33,7 +33,7 @@ const RobotCanvas = () => {
             <Lostrobots />
         </Canvas>
         <div className={myFont.className}>
-            <span className="absolute top-20 ml-20 pointer-events-none bg-gradient-to-br from-white/20 to-white/0 p-4 text-2xl font-black uppercase text-white backdrop-blur-lg rounded-lg">[ Drag to Rotate ]</span>
+            <span className="absolute top-1/4 m-0 rotate-90 pointer-events-none bg-gradient-to-br from-white/20 to-white/0 p-4 text-2xl font-black uppercase text-white backdrop-blur-lg rounded-lg">[ Drag to Rotate ]</span>
         </div>
     </div>
   )
