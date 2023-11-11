@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function Home() {
   
   return (
-        <main className="flex min-h-screen items-center justify-between overflow-clip scroll-smooth" data-theme="blueberry">
+        <main className="flex min-h-screen items-center justify-between overflow-clip scroll-smooth bg-transparent" data-theme="blueberry">
             <HorizontalCar />
           <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
             <Sidebar />
