@@ -22,8 +22,8 @@ const Card = ({ card }) => {
           src={card.url}
           className="absolute inset-0 z-0 w-full h-full bg-center bg-cover"
           alt={card.id}
-          width={5000}
-          height={5000}
+          width={2000}
+          height={2000}
           priority={true}
         />
         {card.id === 1 ? 
@@ -44,16 +44,14 @@ const Card = ({ card }) => {
         </div> : null}
         {card.id === 2 ? 
         <div className="flex flex-row">
-          <div className="flex flex-col ml-40">
-            <div className="mt-72">
-              <Text3d first="concise" second="efficient"/>
+          <div className="flex flex-col ml-20">
+            <div className="mt-52">
+              <Text3d first="constant" second="efficient"/>
             </div>
             <Text3d first="innovation" second="solution"/>
-            <Particleseng id="tsparticles1" number={1}/>         
           </div>
-          <div className="mt-10">
-            <Skills/>
-          </div>
+          <Skills/>
+          <Particleseng id="tsparticles1" number={1}/>
         </div> : null}
       </div>
     );

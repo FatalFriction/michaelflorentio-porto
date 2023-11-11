@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <>
         <aside id="logo-sidebar" className="fixed top-0 right-0 z-40 w-fit h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-        <div className="h-full px-3 py-7 overflow-y-hidden bg-neutral dark:bg-info">
+        <div className="h-full px-1 py-8 overflow-y-hidden bg-neutral dark:bg-info">
             <ul className="space-y-7 font-medium">
                 <li>
                     <div className="flex justify-center">
@@ -22,7 +22,7 @@ const Sidebar = () => {
                 </li>
                 <li>
                     <a href="https://github.com/FatalFriction" className="flex items-center pl-2.5">
-                        <Image src="/avalons.png" className="w-auto h-auto mr-3 sm:h-7" width={10} height={10} alt="Flowbite Logo" />
+                        <Image src="/avalons.png" className="w-auto h-auto mr-3 sm:h-7" width={10} height={10} alt="avalons Logo" />
                     </a>
                 </li>
             </ul>

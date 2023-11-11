@@ -8,6 +8,7 @@ import FirstPanel from "../Panel/FirstPanel";
 import SecondPanel from "../Panel/SecondPanel";
 import ScrollCanvas from "@/components/Scroll/ScrollCanvas";
 import ThirdPanel from "../Panel/ThirdPanel";
+import { cards } from "@/utils/indexdata";
 
 const myFont = localFont({
   src: '/HeavyRain.ttf',
@@ -54,29 +55,3 @@ const HorizontalScrollCarousel = () => {
 };
 
 export default HorizontalCar;
-
-const cards = [
-  {
-    url: "/Riau1.jpg",
-    id: 1,
-  },
-  {
-    url: "/Riau.jpg",
-    id: 2,
-  },
-  {
-    id: 3,
-  },
-  {
-    id: 4,
-  },
-  {
-    id: 5,
-  },
-  {
-    id: 6,
-  },
-  {
-    id: 7,
-  },
-];

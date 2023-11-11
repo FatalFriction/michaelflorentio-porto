@@ -2,7 +2,6 @@ import React from 'react';
 import HorizontalCar from '@/components/UI/Carousel/HorizontalCar';
 import Sidebar from '@/components/UI/sidebar/Sidebar';
 import Contactdial from '@/components/UI/speedial/Contactdial';
-import Image from 'next/image';
 
 export default function Home() {
   
