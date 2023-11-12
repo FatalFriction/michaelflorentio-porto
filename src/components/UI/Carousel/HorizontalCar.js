@@ -16,6 +16,7 @@ const myFont = localFont({
 })
 
 const HorizontalCar = () => {
+
   return (
     <div className="bg-transparent">
       <HorizontalScrollCarousel />
