@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Splash = () => {
   
   return (
-    <div className="flex flex-col mx-auto w-screen h-screen justify-center items-center bg-info">
+    <div className="flex flex-col mx-auto w-screen h-screen justify-center items-center bg-gray-300">
         <Player
         autoplay
         loop
