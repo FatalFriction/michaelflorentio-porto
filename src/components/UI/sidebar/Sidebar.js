@@ -1,12 +1,14 @@
+"use client"
 import React from 'react'
 import Progress from '../progress/Progress'
 import Image from 'next/image'
+import { motion } from "framer-motion";
 
 const Sidebar = () => {
   return (
     <>
         <aside id="logo-sidebar" className="fixed top-0 right-0 z-40 w-fit h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-        <div className="h-full px-1 py-8 overflow-y-hidden bg-neutral dark:bg-info">
+        <motion.div initial={{ paddingLeft:0 , paddingRight:0  }} whileHover={{ paddingLeft:15 , paddingRight:15 }} transition={{ duration: 2, repeat: Infinity }} className="h-full px-1 py-8 overflow-y-hidden bg-neutral dark:bg-info">
             <ul className="space-y-7 font-medium">
                 <li>
                     <div className="flex justify-center">
@@ -27,7 +29,7 @@ const Sidebar = () => {
                 </li>
             </ul>
             
-        </div>
+        </motion.div>
         </aside>
 
     </>
