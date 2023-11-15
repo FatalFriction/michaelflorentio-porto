@@ -12,7 +12,7 @@ const myFont = localFont({
 const ThirdPanel = () => {
   return (
     <>
-    <div className="panel-container flex flex-row text-white bg-info h-auto min-w-[calc(170vw)] w-screen justify-center">
+    <div className="panel-container flex flex-row text-white bg-info h-auto 2xl:min-w-[calc(100vw)] xl:min-w-[calc(320vw)] lg:min-w-[calc(450vw)] w-fit justify-center px-[250px]">
         <section className="third-container flex flex-col justify-center w-fit px-44">
             <div className="flex flex-row">
                 <div className={myFont.className}>

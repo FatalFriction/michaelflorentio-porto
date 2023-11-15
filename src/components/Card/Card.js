@@ -31,8 +31,8 @@ const Card = ({ card }) => {
           <div className='contain'>
             <h1 className='absolute bottom-[20%] left-[9%] text-[12rem] text-info'>who <br/><span className='absolute bottom-[-60%] left-[32%] '>am i</span></h1>
             <h1 className='absolute bottom-[20%] left-[10%] text-[12rem] text-white'>who <br/><span className='absolute bottom-[-60%] left-[31%] '>am i</span></h1>
-            <h2 className='absolute bottom-[25%] left-[38.5%] underline underline-offset-4 text-4xl text-info'>scroll </h2>
-            <h2 className='absolute bottom-[25%] left-[38.9%] underline underline-offset-4 text-4xl text-white'>scroll </h2>
+            <h2 className='absolute bottom-[25%] 3xl:left-[38.5%] 2xl:left-[48.5%] xl:left-[52.9%] lg:left-[64.5%] underline underline-offset-4 text-4xl text-info'>scroll </h2>
+            <h2 className='absolute bottom-[25%] 3xl:left-[38.9%] 2xl:left-[48.9%] xl:left-[53.3%] lg:left-[64.9%] underline underline-offset-4 text-4xl text-white'>scroll </h2>
             <div className={myFont.className}>
               <div className='text-3xl'>
                 <h3 className='absolute top-[5%] right-[5.1%] underline underline-offset-4 text-info'>[ discover more ]</h3>
