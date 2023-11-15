@@ -45,7 +45,7 @@ const ThirdPanel = () => {
                 <div className='text-lists flex flex-row font-extralight items-center text-base space-y-16 space-x-10 w-auto'>
                     <div className='left-part space-y-4'>
                         <h1 className="leading-[1.8] indent-8">I believe that technical scope should<br/> be defined at the project&apos;s earliest stage. <br/> This is why a <strong>technical director </strong>need<br/> to be present all along process</h1>
-                        <h1 className="leading-[1.8]">i bring my expertise during the discovery <br/>phase to prototype and create possibilities of <br/><strong>the most impactful experiences</strong>.</h1>    
+                        <h1 className="leading-[1.8]">I bring my expertise during the discovery <br/>phase to prototype and create possibilities of <br/><strong>the most impactful experiences</strong>.</h1>    
                     </div>
                         <h1 className="leading-[1.8]">This process leads to<strong> better communication </strong><br/> between designers and developers<br/> helping to <strong> solve issues </strong>that might have <br/> occurred at a later stage of the project.</h1>
                 </div>
