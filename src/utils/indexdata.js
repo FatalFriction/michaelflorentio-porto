@@ -224,7 +224,7 @@ export const Fourth_Skills = [
   },
   {
     skill_name: "slack",
-    Image: "/Tech/slack.png",
+    Image: "/Tech/Slack.png",
     width: 80,
     height: 80,
   },
@@ -240,7 +240,7 @@ export const Fifth_Skills = [
   },
   {
     skill_name: "Powershell",
-    Image: "/Tech/powershell.png",
+    Image: "/Tech/Powershell.png",
     width: 80,
     height: 80,
   },
@@ -274,7 +274,7 @@ export const Sixth_Skills = [
   },
   {
     skill_name: "sass",
-    Image: "/Tech/sass.png",
+    Image: "/Tech/Sass.png",
     width: 80,
     height: 80,
   },
