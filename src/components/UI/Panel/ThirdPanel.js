@@ -24,7 +24,7 @@ const ThirdPanel = () => {
                 <div className='text-lists flex flex-row font-extralight items-center text-base space-y-16 space-x-10'>
                     <div className='left-part space-y-4'>
                         <h1 className="leading-[1.8] indent-8">I love concocting fresh experiences <br/>but i <strong>never lose sight of usability</strong><br/> for my audiences</h1>
-                        <h1 className="leading-[1.8] text-left block">i always aim to make our experiences smooth<br/> even on low specification device<strong><br/> because no one should be forgotten</strong>.</h1>    
+                        <h1 className="leading-[1.8] text-left block">I always aim to make our experiences smooth<br/> even on low specification device<strong><br/> because no one should be forgotten</strong>.</h1>    
                     </div>
                     <div className="list-container">
                         <h2 className="text-xl text-secondary"><strong>Thing i enjoy designing:</strong></h2>
