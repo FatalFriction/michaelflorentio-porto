@@ -20,11 +20,11 @@ const Card = ({ card }) => {
       >
         <Image
           src={card.url}
-          className="absolute inset-0 z-0 w-full h-full bg-center bg-cover"
+          className="absolute z-0"
           alt={card.id}
-          width={2000}
-          height={2000}
-          priority={true}
+          fill
+          loading="lazy"
+          quality={70}
         />
         {card.id === 1 ? 
         <div>
