@@ -1,7 +1,10 @@
 "use client"
+
 import React from 'react'
-import { Player } from '@lottiefiles/react-lottie-player';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
+
+const Player = dynamic(() => import('@lottiefiles/react-lottie-player'), {ssr: false});
 
 const Splash = () => {
   
