@@ -9,7 +9,7 @@ const Player = dynamic(() => import('@lottiefiles/react-lottie-player'), {ssr: f
 const Splash = () => {
   
   return (
-    <div className="flex flex-col mx-auto w-screen h-screen justify-center items-center bg-gray-300">
+    <div className="flex flex-col mx-auto justify-center items-center">
         <Player
         autoplay
         loop

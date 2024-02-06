@@ -34,7 +34,7 @@ const HorizontalCar = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-87%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-71%"]);
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -69,11 +69,13 @@ const HorizontalScrollCarousel = ({ x }) => {
             <motion.div style={{ x }} className="flex" key={card.id}>
               {card.id === 3 ? (
                 <FirstPanel key={card.id} />
-              ) : card.id === 4 ? (
+              ) : card.id === 4 ?
+              (
                 <Suspense fallback={<Splash />}>
                   <RobotCanvas key={card.id} />
                 </Suspense>
-              ) : card.id === 5 ? (
+              ) 
+                : card.id === 5 ? (
                 <SecondPanel key={card.id} />
               ) : card.id === 6 ? (
                 <ScrollCanvas key={card.id} />
