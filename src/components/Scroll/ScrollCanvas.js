@@ -9,7 +9,7 @@ const ScrollCanvas = () => {
   const ref = useRef();
   
   return (
-    <div className='scroll-container w-[2000px] h-screen bg-[#dfdfdf]'>
+    <div className='scroll-container w-[2400px] h-screen bg-[#dfdfdf]'>
         <Canvas gl={{ preserveDrawingBuffer: true }} shadows camera={{ fov: 28, near:0.1, far:200 }} dpr={[ 1,2 ]}>
             <OrbitControls 
                 enableZoom={false}
